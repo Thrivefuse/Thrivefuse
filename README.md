@@ -37,22 +37,25 @@ npm start
   Other technologies...
 
 
-**Project Structure**
+**Project Structure **
+
 src/
 |-- components/
 |-- styles/
 |-- ...
 
 
-**Contributing**
-Welcome my able front-end devs! Follow these steps to contribute:
+**Contributing**  
+Welcome my able front-end devs! Follow these steps to contribute:  
 
   -Fork the repository
   -Create a new branch (git checkout -b feature/fooBar)
   -Commit your changes (git commit -am 'Add some fooBar')
   -Push to the branch (git push origin feature/fooBar)
- -Open a pull request
+  -Open a pull request
 
-**Contact**
+**Contact**  
 For inquiries, please contact [Sulaimontaofik08@gmail.com].
 
+**NOTE**  
+You can push to the main branch as Thrivefuse is not yet into production
