@@ -5,8 +5,9 @@ import Image from "../../assets/firstImage.png";
 import Kids from "../../assets/kidsLearning.png";
 import Program from "../../assets/program.png";
 import Enterpreneur from "../../assets/enterpreneur.png";
+import Skills from "./data";
 import "react-slideshow-image/dist/styles.css";
-import { Slide, Slider, Fade } from "react-slideshow-image";
+import ""
 
 function LandingPage() {
   return (
@@ -105,51 +106,7 @@ function LandingPage() {
             </p>
           </div>
         </div>
-        <div>
-          <h1>Lorem Ipsum</h1>
-
-          <div  className={style.SystemBox}
-            style={{ border: "1px solid var(--main-color)" }}>
-            <img src="" alt="" srcset="" className={style.systemImage} />
-            <h3 className={style.systemTitle} >Lorem ipsum</h3>
-            <p className={style.systemText} >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              quos delectus. Nostrum, voluptas. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Sint nihil deserunt quidem. Quod,
-              suscipit. Tenetur qui explicabo{" "}
-            </p>
-          </div>
-          <div className={style.SystemBox} >
-            <img src="" alt="" srcset="" className={style.systemImage} />
-            <h3 className={style.systemTitle} >Lorem ipsum</h3>
-            <p className={style.systemText} >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              quos delectus. Nostrum, voluptas. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Sint nihil deserunt quidem. Quod,
-              suscipit. Tenetur qui explicabo{" "}
-            </p>
-          </div>
-          <div className={style.SystemBox} > 
-            <img src="" alt="" srcset="" className={style.systemImage}  />
-            <h3 className={style.systemTitle} >Lorem ipsum</h3>
-            <p className={style.systemText} >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              quos delectus. Nostrum, voluptas. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Sint nihil deserunt quidem. Quod,
-              suscipit. Tenetur qui explicabo{" "}
-            </p>
-          </div>
-          <div className={style.SystemBox} >
-            <img src="" alt="" srcset="" className={style.systemImage}  />
-            <h3 className={style.systemTitle} >Lorem ipsum</h3>
-            <p className={style.systemText} >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              quos delectus. Nostrum, voluptas. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Sint nihil deserunt quidem. Quod,
-              suscipit. Tenetur qui explicabo{" "}
-            </p>
-          </div>
-        </div>
+        
       </section>
 
       <section className={style.contact}>
