@@ -2,13 +2,23 @@ import { type } from '@testing-library/user-event/dist/type';
 import { string } from 'prop-types'
 import React from 'react'
 
-const custominput = (props: InputProps) => {
+interface InputProps  {
+    name?: string;
+    type?: string;
+    placeholder: string;
+    className?: string;
+    value?: string;
+    onCHange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  }
+const  CustomInput: React.FC<InputProps> = (props) => {
   return (
     <div>
       <input
         placeholder={props.placeholder}
         type={props.type || "text"}
-        className={props.className}
+        className={`defaultClassName ${props.className || ""}`}
+        value={props.value || ""}
+        onChange={props.onChange}
 
       />
     </div>
