@@ -1,12 +1,11 @@
 import React from 'react'
-import styles from './landingPage.module.css';
+import style from './landingPage.module.css';
 import { Slide } from "react-slideshow-image";
 export default function data() {
   return (
     <>
+    <h1>Lorem Ipsum</h1>
     <Slide>
-          <h1>Lorem Ipsum</h1>
-
           <div
             className={style.SystemBox}
             style={{ border: "1px solid var(--main-color)" }}

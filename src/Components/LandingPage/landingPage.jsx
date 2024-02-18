@@ -1,13 +1,14 @@
 import React from "react";
 import style from "./landingPage.module.css";
 import Header from "../Header/header";
-import Image from "../../assets/firstImage.png";
-import Kids from "../../assets/kidsLearning.png";
-import Program from "../../assets/program.png";
-import Enterpreneur from "../../assets/enterpreneur.png";
+import Image from "../../assets/png/firstImage.png";
+import Kids from "../../assets/png/kidsLearning.png";
+import Program from "../../assets/png/program.png";
+import Enterpreneur from "../../assets/png/enterpreneur.png";
 import Skills from "./data";
 import "react-slideshow-image/dist/styles.css";
-import ""
+import LandingForm from "./LandingForm/LandingForm";
+import Footer from "../Footer/footer";
 
 function LandingPage() {
   return (
@@ -106,44 +107,12 @@ function LandingPage() {
             </p>
           </div>
         </div>
-        
+        <Skills className={style.skill} />
       </section>
-
-      <section className={style.contact}>
-        <img
-          src=""
-          alt="a joyous dark lady swinging her hand while sittinng down to the left of her butt"
-        />
-        <h4>Contact Us</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis
-          ipsam fugiat! Fugiat nulla possimus corrupti consequuntur suscip
-        </p>
-        <form action="" method="post">
-          <input type="text" name="name" id="name" placeholder="Enter Name" />
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />{" "}
-          <input type="tel" name="phone" id="phone" placeholder="Phone" />
-          <br />
-          <textarea
-            name="message"
-            id="message"
-            rows="5"
-            cols="20"
-            placeholder="Message..."
-          ></textarea>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+      <LandingForm />
 
       <section>
-        <h3>Courses Videos</h3>
+        <Footer />
       </section>
     </>
   );
