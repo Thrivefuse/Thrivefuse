@@ -13,7 +13,7 @@ const Header = () => {
     // };
 
     return (
-        <BrowserRouter>
+        // <BrowserRouter>
       <div className={style.Header}>
         <h1 className={style.brandName}>ThriveFuse</h1>
         <ul className={style.info}>
@@ -27,7 +27,7 @@ const Header = () => {
             <li><button className={style.signup}>Sign-Up</button></li>
         </ul>
       </div>
-      </BrowserRouter>
+      // </BrowserRouter>
     );
   }
   
