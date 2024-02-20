@@ -5,10 +5,14 @@ import Image from "../../assets/png/firstImage.png";
 import Kids from "../../assets/png/kidsLearning.png";
 import Program from "../../assets/png/program.png";
 import Enterpreneur from "../../assets/png/enterpreneur.png";
+<<<<<<< HEAD:src/Components/LandingPage/landingPage.jsx
 import Skills from "./data";
 import "react-slideshow-image/dist/styles.css";
 import LandingForm from "./LandingForm/LandingForm";
 import Footer from "../Footer/footer";
+=======
+import "react-slideshow-image/dist/styles.css";
+>>>>>>> 49aa63e5fc7f1ce83fb80bdbfa6e13751e2eb79b:src/Components/LandingPage/index.jsx
 
 function LandingPage() {
   return (
@@ -17,12 +21,10 @@ function LandingPage() {
       <section className={style.first} id="first">
         <div className="text">
           <h1 className={style.headText}>
-            Lorem ipsum dolor amet consectetur adipisicing elit.
+          Elevate your child's potential through skill-focused learning. Join us in championing inclusive growth and social protection—empowering the future generation.
           </h1>
           <p className={style.landText}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sequi
-            at et voluptatem. Fuga culpa molestias atque ut \ voluptatum totam
-            labore fugit sint soluta, doloribus.
+          Embark on a transformative educational journey with us, where your child's learning experience goes beyond traditional boundaries. We're not just shaping students; we're cultivating future leaders armed with practical skills. By choosing our platform, you're not only investing in your child's growth but actively contributing to a society where every individual is empowered with skills and protected socially. Enrich your child's education and be part of a movement redefining the landscape of decent work and social protection. Join us in fostering a brighter, more inclusive future...
           </p>
           <div className={style.con}>
             <button className={style.cta}>Become a parent</button>
