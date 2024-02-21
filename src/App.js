@@ -1,8 +1,9 @@
 import React from "react";
-import LandingPage from "./Components/LandingPage/index";
+import LandingPage from "./views/LandingPage/index";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ParentSignUp from "./Components/auth/signup/parentSignUp";
-import TutorSignUp from "./Components/auth/signup/tutorSignUp";
+import ParentSignUp from "./views/auth/signup/parentSignUp";
+import TutorSignUp from "./views/auth/signup/tutorSignUp";
+import StudentDashboard from "./views/dashboard/tutordashboard/StudentDashboard";
 
 
 
@@ -14,6 +15,7 @@ function App() {
               <Route path={"/home"} element={<LandingPage/>} />
               <Route path={"/parent-registration"} element={<ParentSignUp/>} />
               <Route path={"/tutor-registration"} element={<TutorSignUp/>} />
+              <Route path={"/student-dashboard"} element={<StudentDashboard/>} />
           </Routes>
       </Router>
   );

@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vi, 0.8rem);
   --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vi, 1rem);

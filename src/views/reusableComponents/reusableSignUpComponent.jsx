@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react'
 import PropTypes from 'prop-types'
 import AuthInput from './AuthInput'
-// import { useEffect } from 'react'
 
 const ReusableSignUpComponent = React.memo((props) => {
     useEffect(()=>console.log('Hello at Reusable'), [])
