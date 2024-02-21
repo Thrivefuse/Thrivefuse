@@ -1,0 +1,5 @@
+.parentDashboard{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
