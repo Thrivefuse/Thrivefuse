@@ -18,18 +18,21 @@ function Footer() {
       <div className={style.box1}>
         <h1 className={style.company}>Company</h1>
         <ul className={style.ul}>
-          <Link to="">
-            <li>About Us</li>
-          </Link>
-          <Link to="">
-            <li>Careers</li>{" "}
-          </Link>
-          <Link to="">
-            <li>Press</li>
-          </Link>
-          <Link to="">
-            <li>News</li>
-          </Link>
+          <li>
+            <Link to="" className={style.a}>About Us</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="" className={style.a}>Careers </Link>
+          </li>{" "}
+          <li>
+            {" "}
+            <Link to="" className={style.a}>Press</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="" className={style.a}>News</Link>
+          </li>
         </ul>
       </div>
       <div className={style.box2}>
