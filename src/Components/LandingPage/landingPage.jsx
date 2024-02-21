@@ -5,6 +5,10 @@ import Image from "../../assets/png/firstImage.png";
 import Kids from "../../assets/png/kidsLearning.png";
 import Program from "../../assets/png/program.png";
 import Enterpreneur from "../../assets/png/enterpreneur.png";
+import Skills from "./data";
+import "react-slideshow-image/dist/styles.css";
+import LandingForm from "./LandingForm/LandingForm";
+import Footer from "../Footer/footer";
 import "react-slideshow-image/dist/styles.css";
 
 function LandingPage() {
@@ -12,7 +16,7 @@ function LandingPage() {
     <>
       <Header />
       <section className={style.first} id="first">
-        <div className="text">
+        <div className={style.text}>
           <h1 className={style.headText}>
           Elevate your child's potential through skill-focused learning. Join us in championing inclusive growth and social protection—empowering the future generation.
           </h1>
@@ -102,88 +106,12 @@ function LandingPage() {
             </p>
           </div>
         </div>
-        <div>
-          <h1>Lorem Ipsum</h1>
-
-          <div  className={style.SystemBox}
-            style={{ border: "1px solid var(--main-color)" }}>
-            <img src="" alt="" srcset="" className={style.systemImage} />
-            <h3 className={style.systemTitle} >Lorem ipsum</h3>
-            <p className={style.systemText} >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              quos delectus. Nostrum, voluptas. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Sint nihil deserunt quidem. Quod,
-              suscipit. Tenetur qui explicabo{" "}
-            </p>
-          </div>
-          <div className={style.SystemBox} >
-            <img src="" alt="" srcset="" className={style.systemImage} />
-            <h3 className={style.systemTitle} >Lorem ipsum</h3>
-            <p className={style.systemText} >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              quos delectus. Nostrum, voluptas. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Sint nihil deserunt quidem. Quod,
-              suscipit. Tenetur qui explicabo{" "}
-            </p>
-          </div>
-          <div className={style.SystemBox} > 
-            <img src="" alt="" srcset="" className={style.systemImage}  />
-            <h3 className={style.systemTitle} >Lorem ipsum</h3>
-            <p className={style.systemText} >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              quos delectus. Nostrum, voluptas. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Sint nihil deserunt quidem. Quod,
-              suscipit. Tenetur qui explicabo{" "}
-            </p>
-          </div>
-          <div className={style.SystemBox} >
-            <img src="" alt="" srcset="" className={style.systemImage}  />
-            <h3 className={style.systemTitle} >Lorem ipsum</h3>
-            <p className={style.systemText} >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-              quos delectus. Nostrum, voluptas. Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit. Sint nihil deserunt quidem. Quod,
-              suscipit. Tenetur qui explicabo{" "}
-            </p>
-          </div>
-        </div>
+        <Skills className={style.skill} />
       </section>
-
-      <section className={style.contact}>
-        <img
-          src=""
-          alt="a joyous dark lady swinging her hand while sittinng down to the left of her butt"
-        />
-        <h4>Contact Us</h4>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nobis
-          ipsam fugiat! Fugiat nulla possimus corrupti consequuntur suscip
-        </p>
-        <form action="" method="post">
-          <input type="text" name="name" id="name" placeholder="Enter Name" />
-          <br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email Address"
-          />{" "}
-          <input type="tel" name="phone" id="phone" placeholder="Phone" />
-          <br />
-          <textarea
-            name="message"
-            id="message"
-            rows="5"
-            cols="20"
-            placeholder="Message..."
-          ></textarea>
-          <br />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
+      <LandingForm />
 
       <section>
-        <h3>Courses Videos</h3>
+        <Footer />
       </section>
     </>
   );

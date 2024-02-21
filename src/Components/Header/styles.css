@@ -1,0 +1,27 @@
+
+@media only screen and (max-width: 1024px) {
+    .closeBtn, .openBtn, .header{
+      visibility: visible;
+      opacity: 1;
+    }
+    nav, .header{
+      position: fixed;
+      top: -100vh;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      background-color: var(--back-color);
+      transition: 1s;
+      transform: translateY(-100vh);
+    }
+  
+    .responsive_nav, .header{
+      transform: translateY(100vh);
+    }
+  
+  }
+  

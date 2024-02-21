@@ -1,83 +1,103 @@
-font-family:url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap')
+/* font-family:url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap'); */
 
 *, 
-*::after, *::before 
-{
+*::after, *::before {
   box-sizing: border-box;
   margin: 0;
-  padding:0;
-  width: 100vw;
+  padding: 0;
 }
 
-.Header{
-  background-color:#fff;
+.Header {
+  background-color: #fff;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 5.5rem;
+  z-index:100 ;
   /* border: 1px solid red; */
 }
-.brandName{
+.brandName {
   font-family: Rubik Glitch Pop;
-  margin-left:0.5rem;
+  margin-left: 0.5rem;
   margin-right: 6rem;
   color: #2257bf;
   /* border: 1px solid red; */
 }
-.info{
+.info {
   display: flex;
-  padding:0 5rem;
+  padding: 0 5rem;
   align-items: center;
   list-style: none;
   margin-right: 1rem;
-
 }
-.cta{
+.cta {
   display: flex;
   list-style: none;
-  padding:0 1rem;
+  padding: 0 1rem;
   margin-right: 2rem;
 }
-li{
+li {
   padding: 0 2rem;
 }
 
-.a{
+.a {
   text-decoration: none;
   font-size: 20px;
   color: black;
-
 }
-.a:hover, .a:hover, .a:visited{
+.a:hover,
+.a:hover,
+.a:visited {
   color: #2489d3;
   font-weight: 900;
-  border-bottom: 2px solid #2489D3;
+  border-bottom: 2px solid #2489d3;
 }
-.click{
-  color: #2489D3;
+.click {
+  color: #2489d3;
 }
-button{
-  border-radius: 25px ;
+button {
+  border-radius: 25px;
   width: 7rem;
   font-size: 18px;
   height: 2.5rem;
   background-color: #fff;
-  border:3px solid #2489D3;
-  color: #2489D3;
+  border: 3px solid #2489d3;
+  color: #2489d3;
 }
-.signup{
-  background-color: #2489D3;
+.signup {
+  background-color: #2489d3;
   color: #fff;
 }
-button:hover {  
-  background-color:#2489D3;
+button:hover {
+  background-color: #2489d3;
   /* box-shadow: inset 0 -15px 0 #2489d3; */
   cursor: pointer;
-  color:  #fff;
+  color: #fff;
 }
-.signup:hover{
+.signup:hover {
   background-color: #fff;
-  color: #2489D3;
+  color: #2489d3;
+}
+.headClose{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
+.closeBtn, .openBtn, .header{
+  padding: 5px;
+  cursor: pointer;
+  background:transparent ;
+  border: none;
+  outline: none;
+  color:var(--main-color) ;
+  visibility: hidden;
+  opacity: 0;
+}
+
+nav{
+  display: flex;
+  align-items: center;
 }
