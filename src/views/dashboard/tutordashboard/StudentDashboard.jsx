@@ -1,5 +1,5 @@
 import React from "react";
-import SideBar from "../../reusableComponents/SideBar";
+import Tutor_SideBar from "../../reusableComponents/Tutor_SideBar";
 import "../../../styles/dashboard/tutordashboard/StudentDashboard.css";
 import DateRangeCalendarCalendarsProp from "../../reusableComponents/Calendar";
 import Courses from "./Courses";

@@ -6,7 +6,7 @@ import { GrResources } from "react-icons/gr";
 import { GiBookshelf } from "react-icons/gi";
 import "../../styles/dashboard/tutordashboard/SideBar.css"
 
-function SideBar() {
+function Tutor_SideBar() {
   return (
     <div className="mr-16">
       <img className="logo" src={generalImage} alt="" />
@@ -40,4 +40,4 @@ function SideBar() {
   );
 }
 
-export default SideBar;
+export default Tutor_SideBar;
