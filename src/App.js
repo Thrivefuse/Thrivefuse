@@ -1,11 +1,11 @@
 import React from "react";
-import LandingPage from "./views/LandingPage/landingPage";
+import LandingPage from "./views/landingpage/landingPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ParentSignUp from "./views/auth/signup/parentSignUp";
 import TutorSignUp from "./views/auth/signup/tutorSignUp";
-import StudentDashboard from "./views/dashboard/tutordashboard/StudentDashboard";
-import ParentDashboard from "./views/dashboard/ParentDashboard";
-import NotFoundPage from "./views/NotFoundPage";
+import StudentDashboard from "./views/dashboard/studentdashboard/StudentDashboard";
+import ParentDashboard from "./views/dashboard/parentdashboard/ParentDashboard";
+import NotFoundPage from "./views/reusableComponents/NotFoundPage";
 
 
 function App() {

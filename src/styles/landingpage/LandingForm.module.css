@@ -33,22 +33,21 @@
   position: relative;
   color: var(--main-color);
   font-size: var(--step--3);
-  font-family: Raleway;
+  font-family: Raleway, serif;
   font-weight: 500;
   letter-spacing: 1px;
-  font-size: 24px;
 }
 .contactText {
   margin-top: -10px;
 }
 
-form {
+.Contact-Us-Form-Frame {
   width: 28em;
   background-color: #e6e6e6;
   border-radius: 20px;
   padding: 0 1.2rem;
   margin: 5rem auto;
-  height: 62vh;
+  /*height: 62vh;*/
   display: block;
   justify-content: center;
   align-items: center;

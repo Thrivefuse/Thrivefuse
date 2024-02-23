@@ -1,5 +1,5 @@
 import React from "react";
-import Tutor_SideBar from "../../reusableComponents/Tutor_SideBar";
+import Student_SideBar from "../../reusableComponents/Tutor_SideBar";
 import "../../../styles/dashboard/tutordashboard/StudentDashboard.css";
 import DateRangeCalendarCalendarsProp from "../../reusableComponents/Calendar";
 import Courses from "./Courses";
@@ -10,7 +10,7 @@ function StudentDashboard() {
       <div className="student-dashboard-main-container flex">
         <div className="ml-7 mt-8">
             Hi
-          <SideBar/>
+          <Student_SideBar/>
         </div>
         <div className="dashboard-display-section">
         <div className="ml-7 mt-5">

@@ -1,5 +1,5 @@
 import React from 'react';
-import Tutor_SideBar from '../reusableComponents/Tutor_SideBar';
+import Tutor_SideBar from '../../reusableComponents/Tutor_SideBar';
 
 const ParentDashboard = () => {
   return (

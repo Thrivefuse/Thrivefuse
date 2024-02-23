@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Icon from '../../../assets/png/logo/thrive-fuse-logo-white-transparent.png'
 import ReusableSignUpComponent from '../../reusableComponents/reusableSignUpComponent.jsx'
 import '../../../styles/auth/signup/tutorSignUp.css'
-import AuthInput from '../../reusableComponents/AuthInput.jsx';
 import axios from 'axios';
 import { EMAIL_REGEX_PATTERN, PASSWORD_REGEX_PATTERN, SERVER_BASE_URL } from '../../../utils/constants.js';
 
@@ -48,7 +47,7 @@ const TutorSignUp = () => {
         data.append('tutorsResume', tutorSignUpData.tutorsResume)
         data.append('professionalQualification', tutorSignUpData.professionalQualification)
 
-        axios.post(`${SERVER_BASE_URL}/tutor/sign-up`, data)
+        axios.post(`${SERVER_BASE_URL}/tutor/register`, data)
             .then((response) => {
                 console.log(response.data);
             })
@@ -89,7 +88,6 @@ const TutorSignUp = () => {
         }
         return fileInfo;
     }
-        
 
     return (
         <div className={'Tutor-SignUp-Main-Frame'}>
@@ -97,25 +95,25 @@ const TutorSignUp = () => {
                 <div className={"Logo-View-On-SignUp-Page"}>
                     <img src={Icon} alt="" />
                 </div>
-                
                 <form onSubmit={sendSignUpDataToBackend} className={'Tutor-SignUp-Form'}>
-                    <div className={'Tutor-SignUp-Component'}>
-                        {progressState === 0 && <div className="Progress-Bar-Main-Frame">
-                            <div style={progressState > 0 ? progressStyle : undefined} className="Circle1">1</div>
+                    {/*{progressState === 0 &&*/}
+                        <div className="Progress-Bar-Main-Frame">
+                            <div style={progressState >= 0 ? progressStyle : undefined} className="Circle1">1</div>
                             <div className="Main-Bar-Frame">
-                                <div style={progressState > 0 ? progressStyle : undefined} className="Bar1" />
-                                <div style={progressState > 1 ? progressStyle : undefined} className="Bar2" />
+                                <div style={progressState > 0? progressStyle: undefined} className="Bar1"/>
+                                <div style={progressState > 1? progressStyle: undefined} className="Bar2"/>
                             </div>
                             <div className="Circle2">2</div>
                         </div>
-                        }
+                    {/*}*/}
+                    <div className={'Tutor-SignUp-Component'}>
                         {progressState === 0 && <ReusableSignUpComponent 
                             emailRegex={EMAIL_REGEX_PATTERN} 
                             passwordRegex={PASSWORD_REGEX_PATTERN} 
                             signUpData={tutorSignUpData} handleInputChange={handleInputChange}  
                         />}
                         <div className="Page-2">
-                            {progressState === 1 && 
+                            {progressState === 1 &&
                                 <>
                                     <div className={'Select-Wrapper'}>
                                         <label htmlFor="Skill-Selection">Select A Skill</label>
@@ -171,32 +169,3 @@ const TutorSignUp = () => {
     )
 }
 export default TutorSignUp;
-
-/*
-
-<AuthInput 
-            onChange={handleInputChange} inputLabel={'First Name'} 
-            inputPlaceHolder={'Bob'} inputType={'text'}
-            required={true}
-        />
-        <AuthInput 
-            onChange={handleInputChange} inputLabel={'Last Name'} 
-            inputPlaceHolder={'Dylan'} inputType={'text'}
-            required={true}
-        />
-        <AuthInput 
-            onChange={handleInputChange} inputLabel={'Email'} 
-            inputPlaceHolder={'dylanbob@gmail.com'} inputType={'email'}
-            required={true} regexPattern={EMAIL_REGEX_PATTERN}
-        />
-        <AuthInput 
-            onChange={handleInputChange} inputLabel={'Password'} 
-            inputPlaceHolder={'*********'} inputType={'password'}
-            required={true} regexPattern={PASSWORD_REGEX_PATTERN}
-        />
-        <AuthInput 
-            onChange={handleInputChange} inputLabel={'Phone Number'} 
-            inputPlaceHolder={'+234 703 617 461 7'} inputType={'tel'}
-            required={true}
-        />
-*/

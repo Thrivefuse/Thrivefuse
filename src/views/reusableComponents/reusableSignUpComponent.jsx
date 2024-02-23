@@ -6,7 +6,7 @@ const ReusableSignUpComponent = React.memo((props) => {
     useEffect(()=>console.log('Hello at Reusable'), [])
     
   return (
-    <>
+    <div className={"Reusable-Sign-Up-Component-Frame"}>
         <AuthInput 
             onChange={props.handleInputChange} inputLabel={'First Name'} 
             inputPlaceHolder={'Bob'} inputType={'text'}
@@ -32,7 +32,7 @@ const ReusableSignUpComponent = React.memo((props) => {
             inputPlaceHolder={'+234 703 617 461 7'} inputType={'tel'}
             required={true}
         />
-    </>
+    </div>
   )
 })
 

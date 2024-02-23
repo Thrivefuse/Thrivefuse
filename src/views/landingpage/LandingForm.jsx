@@ -1,19 +1,13 @@
 import React from "react";
-import style from "./LandingForm.module.css";
-// import Joy from '../../../assets/png/Joy.png'
+import style from "../../styles/landingpage/LandingForm.module.css";
 
 const LandingForm = () => {
-  // const backgroundImageStyle = {
-  //     backgroundImage: `url(${Joy})`,
-  //     backgroundRepeat: 'no-repeat',
-  //     backgroundPosition: 'center center',
-  //     height: '90vh',
-  //   }
+
   return (
     <section className={style.contact} id="contactUs">
       {/* <img
           src={Joy}
-          alt="a joyous dark lady swinging her hand while sittinng down"
+          alt="a joyous dark lady swinging her hand while sitting down"
           className={style.formImage}
         /> */}
       <div className={style.container}>
@@ -31,7 +25,7 @@ const LandingForm = () => {
             laudantium aliquam saepe, quas, excepturi placeat culpa vel iure
           </p>
         </div>
-        <form action="" method="post">
+        <form className={"Contact-Us-Form-Frame"} action="" method="post">
           <h2>Fill The Form</h2>
           <input type="text" name="name" id="name" placeholder="Enter Name" className={style.name} />
           <br />
