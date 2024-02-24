@@ -46,7 +46,7 @@ const ParentSignUp = () => {
                 <form onSubmit={handleFormSubmission} className={'Parent-SignUp-Form'}>
                     <ReusableSignUpComponent handleInputChange={handleInputChange}/>
                     <div className={'SignUp-Button-Div'}>
-                        <button type="submit">Sign Up</button>
+                        <button type="submit" style={{height : '3rem'}}>Sign Up</button>
                     </div>
                 </form>
             </div>

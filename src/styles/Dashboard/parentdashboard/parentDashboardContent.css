@@ -1,0 +1,57 @@
+.parent-content{
+    display: block;
+    margin: 0;
+    position: fixed;
+}
+.parent-avatar-notification{
+    display: block;
+    padding: auto;
+}
+.parent-avatar-container{
+    display: block;
+    padding: auto;
+    margin: auto 0;
+    align-items: end;
+
+}
+.profile-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 65vw;
+    gap: 1rem;
+    margin: 0 ;
+    padding: 0;
+}
+.wards-info, .our-skills{
+    height:12rem;
+    width: 55vw;
+    border: 1px solid var(--main-color);
+    background-color: var(--back-color);
+    margin: 1rem 0;
+}
+.our-skills{
+    overflow-y: auto;
+}
+.group-skills{
+    padding-left: 1rem;
+    margin: 1rem;
+}
+@media (max-width: 800px) {
+    .profile-head{
+        width: 60vw;
+    }
+  }
+
+  @media (max-width: 561px){
+    .wards-info, .our-skills{
+        display: block;
+        margin: 0 auto;
+
+    }
+    .parent{
+        margin-left:1rem ;
+        padding-bottom: 2rem;
+    }
+  }

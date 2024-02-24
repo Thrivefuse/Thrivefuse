@@ -1,13 +1,13 @@
 import React from 'react';
-import Tutor_SideBar from '../../reusableComponents/Tutor_SideBar';
+import Parent_SideBar from '../../reusableComponents/Parent__SideBar';
+import MainParentDashboard from './ParentDashboardContent';
+import "../../../styles/dashboard/parentdashboard/ParentDashboard.css";
 
 const ParentDashboard = () => {
+  // const [isDarkMode, toggleTheme] = useTheme();
   return (
-    <>
-      <div>
-      <Tutor_SideBar />
-      <div>
-      </div>
+    <div className="parentDashboard">
+      <Parent_SideBar />
       <div className="parent-main-content">
         <MainParentDashboard />
       </div>
