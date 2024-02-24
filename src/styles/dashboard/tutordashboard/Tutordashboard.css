@@ -1,0 +1,18 @@
+
+.student-dashboard{
+  display: flex;
+}
+
+.dashboard-display-section{ 
+
+  background-color: rgb(238, 237, 255);
+  width: 96vw;
+}
+.welcome{
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:#1a1a1a;
+  margin: 2% 4%;
+  text-align: center;
+  /* text-align: center; */
+}
