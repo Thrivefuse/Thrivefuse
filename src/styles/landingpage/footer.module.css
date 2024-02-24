@@ -3,11 +3,11 @@
     margin-bottom:0 ;
     padding-bottom: 0;
     background-color: var(--main-color);
-    padding: 2rem;
-    height: 50vh;
+    padding:0 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 100;
 }
 .brandName{
     font-family: Rubik Glitch Pop;
@@ -43,17 +43,18 @@
 .box1 {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     flex-direction: column;
-    margin-left: -30em;
-    height:100%;
-    animation: slideInUp 1s forwards;
+    /* margin-left: -30em; */
+    /* height:40vh; */
+    /* animation: slideInUp 1s forwards; */
 }
 .box2{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height:40vh;
-    animation: slideInUp 1s forwards;
+    /* height:40vh; */
+    /* animation: slideInUp 1s forwards; */
 }
 
 @media only screen and (max-width: 768px){
@@ -68,13 +69,22 @@
         width: 85%;
     }
 }
-@keyframes slideInUp {
-    from {
-      transform: translateY(100%);
-      opacity: 0;
+@media only screen and (max-width : 427px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -4rem;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
+    .footerLinks{
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
     }
-  }
+    .box2{
+        display: block;
+        margin-left: -10rem;
+    }
+}
