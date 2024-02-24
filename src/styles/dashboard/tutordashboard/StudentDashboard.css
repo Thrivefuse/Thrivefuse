@@ -1,0 +1,11 @@
+
+
+.student-dashboard-main-container{
+    display: flex;
+}
+
+.dashboard-display-section{ 
+
+    background-color: rgb(238, 237, 255);
+    width: 96vw;
+}

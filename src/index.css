@@ -1,7 +1,7 @@
-/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1240,20,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-/* @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --step-01: clamp(.4312,  .4312, calc(100vw - 100px));
   --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vi, 0.8rem);
@@ -25,7 +25,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width:  100vw;
+  width:  95vw;
   height: 100vh;
   padding: 0;
 }
