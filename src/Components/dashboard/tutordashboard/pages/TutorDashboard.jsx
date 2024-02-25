@@ -1,7 +1,7 @@
 import React from "react";
 import SideBar from "../components/SideBar";
 import Profile from "./Profile";
-import "../../../../styles/dashboard/tutordashboard/Tutordashboard.css";
+import "../../../../styles/Dashboard/tutordashboard/Tutordashboard.css";
 import DateRangeCalendarCalendarsProp from "../components/Calendar";
 // import Student from "./Student";
 

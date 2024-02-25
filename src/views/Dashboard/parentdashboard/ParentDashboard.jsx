@@ -1,7 +1,7 @@
 import React from 'react';
 import Parent_SideBar from '../../reusableComponents/Parent__SideBar';
 import MainParentDashboard from './ParentDashboardContent';
-import "../../../styles/dashboard/parentdashboard/ParentDashboard.css";
+import "../../../styles/Dashboard/parentdashboard/ParentDashboard.css";
 
 const ParentDashboard = () => {
   // const [isDarkMode, toggleTheme] = useTheme();
