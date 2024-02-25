@@ -109,6 +109,8 @@
     background-color: var(--back-color);
     margin:1rem 0;
     display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
     padding: 2.8rem 5.2rem;
 }
 .thrivefuseMessage{
@@ -153,6 +155,9 @@
     .all{
         display: flex;
         flex-direction : column-reverse;
+    }
+    .thrivefuse{
+        flex-wrap: wrap;
     }
     
 
