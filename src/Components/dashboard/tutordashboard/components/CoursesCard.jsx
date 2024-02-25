@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../../styles/Dashboard/tutordashboard/CourseCard.css';
+import '../../../../styles/dashboard/tutordashboard/CourseCard.css';
 import LinearWithValueLabel from './ProgressBar'
 
 function CoursesCard({courseTitle, image, progress}) {

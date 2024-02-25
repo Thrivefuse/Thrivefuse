@@ -4,6 +4,8 @@ import Icon from '../../../assets/png/logo/thrive-fuse-logo-white-transparent.pn
 import ReusableSignUpComponent from '../../reusableComponents/reusableSignUpComponent.jsx'
 import axios from "axios";
 import {SERVER_BASE_URL} from "../../../utils/constants";
+import {toast} from "react-toastify"
+import { useNavigate } from 'react-router-dom';
 
 
 const initialSignUpData = {
@@ -16,23 +18,25 @@ const initialSignUpData = {
 const ParentSignUp = () => {
 
     const [signUpData, setSignUpData] = useState(initialSignUpData)
-
+    const navigate = useNavigate()
     function handleInputChange(event){
         event.preventDefault();
         setSignUpData((prevState)=>({
-            ...prevState, [event.target.id]: event.target.name,
+            ...prevState, [event.target.id]: event.target.value,
         }))
     }
 
     function handleFormSubmission(event) {
         console.log("In submit")
+        console.log(signUpData)
         event.preventDefault();
         axios.post(`${SERVER_BASE_URL}/parent/register`, signUpData)
-            .then((response) => {
-                // if (response.data.statusCode === 201)
-                //     console.log(response.data)
-                console.log(response.data)
-            }).catch((error)=>{
+        .then((response) => {
+            if(response.data.statusCode === 201)
+                navigate("/sign-up-next-steps")
+            console.log(response.data)
+        })
+        .catch((error)=>{
             console.log("error message"+error.message)
         })
     }

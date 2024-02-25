@@ -10,7 +10,7 @@ const activeCourses = [
     progress: 80,
 },
 {
-  courseTitle: 'Mathemstics', 
+  courseTitle: 'Mathematics', 
   image: './',
   progress: 30,
 },
