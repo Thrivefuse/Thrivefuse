@@ -3,7 +3,7 @@ import React from 'react';
 export default function MainParentDashboard() {
   return (
     <div>
-      <h1>Taofik is a goodBoyt</h1>
+      <h1>Taofik is a goodBoy</h1>
     </div>
   )
 }
