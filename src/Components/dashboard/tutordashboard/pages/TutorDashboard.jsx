@@ -15,11 +15,11 @@ function TutorDashboard() {
   width: '96vw'}}>
           <div className="ml-7 mt-5">
             <h2 className="welcome" style={{
-  font-size: '30px',
-  font-family: 'Georgia',
+  fontSize: '30px',
+  fontFamily: 'Georgia',
   color:#1a1a1a,
   margin: 2% 4%,
-  text-align: center,
+  textAlign: center,
   /* text-align: center; */
 }}>Welcome Back</h2>
           </div>
