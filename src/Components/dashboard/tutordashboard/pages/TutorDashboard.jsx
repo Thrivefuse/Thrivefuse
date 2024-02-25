@@ -14,14 +14,14 @@ function TutorDashboard() {
         <div className="dashboard-display-section" style={{ background-color: 'rgb(238, 237, 255)',
   width: '96vw'}}>
           <div className="ml-7 mt-5">
-            <h2 className="welcome" style={{{
+            <h2 className="welcome" style={{
   font-size: '30px',
   font-family: 'Georgia',
   color:#1a1a1a,
   margin: 2% 4%,
   text-align: center,
   /* text-align: center; */
-}}}>Welcome Back</h2>
+}}>Welcome Back</h2>
           </div>
           <Profile />
           {/* <Student /> */}
