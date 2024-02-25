@@ -17,10 +17,9 @@ function TutorDashboard() {
             <h2 className="welcome" style={{
   fontSize: '30px',
   fontFamily: 'Georgia',
-  color:#1a1a1a,
-  margin: 2% 4%,
-  textAlign: center,
-  /* text-align: center; */
+  color:'#1a1a1a',
+  margin:' 2% 4%',
+  textAlign: 'center',
 }}>Welcome Back</h2>
           </div>
           <Profile />
