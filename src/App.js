@@ -12,7 +12,8 @@ import NotFoundPage from "./views/reusableComponents/NotFoundPage";
 function App() {
   return (
     <div>
-
+      <TutorDashboard />
+{/* 
       <Router>
           <Routes>
               <Route path={"/"} element={<LandingPage/>} />
@@ -25,7 +26,7 @@ function App() {
               <Route path={"/dashboard"} element={<ParentDashboard />} />
               <Route path="*" element={<NotFoundPage/>} />
           </Routes>
-      </Router>
+      </Router> */}
     </div>
   );
 }

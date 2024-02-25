@@ -1,0 +1,29 @@
+.logo{
+    margin: 0 0 50% 0  ;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    margin-top: 10%;
+}
+
+.log img{
+    width: 40%;
+    height: 50%;
+}
+.side-options{
+    margin: 0 0 20% 0 ;
+}
+.side-options{
+    display: flex;
+}
+.button{
+    border: none;
+    background: none;
+}
+.buttons1{
+    margin-top: 20px;
+}
+
+.sidebar-header{
+    margin-left: 30px;
+}
