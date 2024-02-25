@@ -1,5 +1,7 @@
 .contact {
   background-color: #d7d7d7;
+  padding-top: 0;
+  margin-top: 0;
 }
 .formImage {
   height: 500px;
@@ -36,21 +38,22 @@
   font-family: Raleway, serif;
   font-weight: 500;
   letter-spacing: 1px;
+  margin: 2rem 0;
 }
 .contactText {
   margin-top: -10px;
 }
 
-.Contact-Us-Form-Frame {
+.ContactUsFormFrame {
   width: 28em;
   background-color: #e6e6e6;
   border-radius: 20px;
   padding: 0 1.2rem;
-  margin: 5rem auto;
-  /*height: 62vh;*/
-  display: block;
+  margin: 2rem auto;
+  position: relative;
   justify-content: center;
   align-items: center;
+  border: 2px solid var(--main-color);
 }
 .name {
   width: 100%;
@@ -77,6 +80,7 @@ input::placeholder{
 }
 .message {
   width: 100%;
+  resize: none;
 }
 .submitBtn {
   border-radius: 0;
@@ -84,6 +88,7 @@ input::placeholder{
   background-color: var(--main-color);
   color: #e6e6e6;
   border: 1px solid var(--main-color);
+  margin-bottom: 1rem;
 }
 .btnWrapper {
   display: flex;
@@ -99,8 +104,10 @@ input::placeholder{
     width: 80%;
   }
 }
-@media (min-width: 769px) {
-  .container {
-    height: 65vh;
+@media (max-width: 430px) {
+  .ContactUsFormFrame{
+    margin: 2rem;
+    border: 3px solid var(--main-color);
+    padding: 1rem;
   }
 }

@@ -1,17 +1,16 @@
 import React from 'react';
-import Tutor_SideBar from '../../reusableComponents/Tutor_SideBar';
-import MainParentDashboard from './MainParentDashboard'
+import Parent_SideBar from '../../reusableComponents/Parent__SideBar';
+import MainParentDashboard from './ParentDashboardContent';
 
 const ParentDashboard = () => {
+  // const [isDarkMode, toggleTheme] = useTheme();
   return (
-      <>
-          <Tutor_SideBar />
-          <div>
-          </div>
-          <div className="parent-main-content">
-              <MainParentDashboard />
-          </div>
-      </>
+    <div style={{ display: 'flex', flexDirection: 'row', gap: '4rem' }}>
+      <Parent_SideBar />
+      <div className="parent-main-content">
+        <MainParentDashboard />
+      </div>
+    </div>
   )
 }
 

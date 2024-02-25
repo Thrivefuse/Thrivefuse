@@ -1,6 +1,11 @@
-
+.container{
+    width: 100%;
+    border: 1px solid yellow;
+}
 .first {
-  padding: 2.8rem 5.2rem;
+    width: 100%;
+  padding: 2.8rem 3rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: row;
   background-color: var(--back-color);
@@ -8,23 +13,25 @@
 .text {
   width: 100%;
   display: block;
-  margin: auto;
+  margin: auto 0;
+  padding-top: 8rem;
 }
 .headText {
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
+  width: 90%;
   font-size: var(--step-1);
-    font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   text-align: center;
   padding-bottom: 1rem;
+  padding-right: 0;
   margin-top: -9rem;
 }
 .landText {
   display: flex;
   flex-wrap: wrap;
   margin: 1rem 0;
-  width: 60%;
+  width: 90%;
   font-size: var(--step-01);
   text-align: center;
 }
@@ -32,22 +39,31 @@
   width: 15rem;
   height: 4rem;
   border-radius: 11rem;
-  margin:0 1rem;
+  margin:1rem;
+}
+.con{
+    margin: 2.5rem 0;
 }
 .landImage {
-  height: 500px;
-  width: 500px;
+  height: 450px;
+  width: 450px;
   border-radius: 50%;
   margin-top: 7rem; 
 }
-@media only screen and (max-width: 768px){
+@media (max-width: 755px){
+    .first{
+        min-width: 100vw;
+        padding: 0;
+       justify-content: center;
+       align-items: center;
+    }
     .text{
         width: 100%;
-        align-items: center;
         padding-left:2px ;
     }
     .headText{
-        min-width: 80vw;
+        margin-top: 5rem;
+        width: 100%;
         text-align: center;
         padding-left: 2rem;
     }
@@ -66,11 +82,35 @@
         justify-content: space-around;
     }
 }
-
+@media (max-width: 426px) {
+    .first{
+        padding-top:-2rem ;
+        position: static;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text{
+        padding-top:1rem ;
+    }
+    .headText{
+        animation: slideInUp 1s forwards;
+        margin: 0 auto;
+        padding: 0 0.5rem;
+        width: 100%;
+    }
+    .landImage{
+        height: 300px;
+        width: 300px;
+        margin-top: 2rem;
+    }
+    
+}
 .thrivefuse{
     background-color: var(--back-color);
     margin:1rem 0;
     display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
     padding: 2.8rem 5.2rem;
 }
 .thrivefuseMessage{
@@ -104,11 +144,23 @@
         padding:0 1.5rem;
     }
     .enthusiastImage{
-        width: 28rem;
+        width: 300px;
+        height: 280px;
     }
     .SystemBox{
         width: 95%;
     }
+}
+@media (max-width: 426px) {
+    .all{
+        display: flex;
+        flex-direction : column-reverse;
+    }
+    .thrivefuse{
+        flex-wrap: wrap;
+    }
+    
+
 }
 
 .courses{
@@ -117,10 +169,13 @@
     padding: 2.8rem 5.2rem;
 }
 .courseExplore{
-    text-align: center;
+    text-align:left;
     color: var(--main-color);
     font-size: var(--step-1);
     display: block;
+    line-height: 1.5;
+    margin-left: -2rem;
+    margin-bottom: 1rem;
 
 }
 .systemContainer{
@@ -130,17 +185,25 @@
     place-items: center;
 }
 .SystemBox{
-    width: 350px;
+    width: 100%;
     display: block;
     margin: 0 auto;
     /* width: 95%; */
-    gap: 20px;
+    gap: 2rem;
+}
+.systemImageBox{
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .systemImage{
     width: 320px;
     height:180px ;
     margin: 1rem;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-self:center ;
 }
 .systemTitle{
     font-size: var(--step-1);
@@ -148,11 +211,54 @@
     color: var(--main-color);
     text-shadow:  0 4px 8px rgba(0, 0, 0, 0.7);
     font-weight: 500;
+    text-align: center;
 }
 .systemText{
     font-size: 15px;
     margin: 1rem;
     display: flex;
-    flex-wrap: wrap;
+    word-wrap: wrap;
+    text-align: center;
+}
+.dataContainer{
+    margin-top: 3rem;
 }
 
+@media (max-width: 426px) {
+    .Slide{
+        margin: 10px;
+        width: 100%;
+        border: 1px solid red;
+    }
+    .SystemBox{
+        margin: 0;
+        gap: 0rem;
+        border: 1px solid green;
+    }
+    span{
+        font-weight: 500;
+    }
+}
+
+
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInDown {
+    from {
+      transform: translateY(10vh);
+      opacity: 0.5;
+    }
+    to {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+  }
