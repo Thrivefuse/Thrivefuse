@@ -11,7 +11,7 @@ function TutorDashboard() {
         <div className="ml-7 mt-8">
           <SideBar />
         </div>
-        <div className="dashboard-display-section" style={{ background-color: 'rgb(238, 237, 255)',
+        <div className="dashboard-display-section" style={{ backgroundColor: 'rgb(238, 237, 255)',
   width: '96vw'}}>
           <div className="ml-7 mt-5">
             <h2 className="welcome" style={{
