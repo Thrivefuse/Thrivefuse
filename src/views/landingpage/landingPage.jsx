@@ -117,6 +117,7 @@ function LandingPage() {
               <button className={style.cta}>Learn More</button>
             </div>
           </div>
+          </div>
           <div className="image2">
             <img
               src={Kids}
@@ -125,7 +126,7 @@ function LandingPage() {
               srcSet=""
             />
           </div>
-        </div>
+        
       </section>
 
       <section className={style.courses} id="course">
