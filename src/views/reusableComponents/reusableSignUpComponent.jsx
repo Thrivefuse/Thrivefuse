@@ -1,13 +1,12 @@
 import React, {useEffect} from 'react'
 import PropTypes from 'prop-types'
 import AuthInput from './AuthInput'
-// import { useEffect } from 'react'
 
 const ReusableSignUpComponent = React.memo((props) => {
     useEffect(()=>console.log('Hello at Reusable'), [])
     
   return (
-    <>
+    <div className={"Reusable-Sign-Up-Component-Frame"}>
         <AuthInput 
             onChange={props.handleInputChange} inputLabel={'First Name'} 
             inputPlaceHolder={'Bob'} inputType={'text'}
@@ -33,7 +32,7 @@ const ReusableSignUpComponent = React.memo((props) => {
             inputPlaceHolder={'+234 703 617 461 7'} inputType={'tel'}
             required={true}
         />
-    </>
+    </div>
   )
 })
 

@@ -1,0 +1,43 @@
+.sidebar{
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    height: 43.4rem;
+    width: 25vw;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    width: 12rem;
+    border-radius: 0;
+    margin: 2rem;
+    height: 4rem;
+}
+.sidebar-box1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 12rem;
+    margin-bottom: 6rem;
+}
+@media (max-width: 800px) {
+   .btn{
+    width: 8rem;
+    display: block;
+   }
+  }
+@media (max-width: 561px) {
+    .btn{
+        display: flex;
+        flex-wrap: wrap;
+        width: 4rem;
+        height: 2.5rem;
+    }
+    .sidebar{
+        display: none;
+    }
+  }

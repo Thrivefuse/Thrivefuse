@@ -1,0 +1,113 @@
+.contact {
+  background-color: #d7d7d7;
+  padding-top: 0;
+  margin-top: 0;
+}
+.formImage {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  margin-top: 7rem;
+  z-index: 1;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding-top: 5rem;
+  gap: 2rem;
+  z-index: 2;
+}
+.box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 40%;
+  margin: 3rem;
+}
+.headtext {
+  color: var(--main-color);
+  font-size: var(--step--3);
+}
+.formSubHead {
+  position: relative;
+  color: var(--main-color);
+  font-size: var(--step--3);
+  font-family: Raleway, serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 2rem 0;
+}
+.contactText {
+  margin-top: -10px;
+}
+
+.ContactUsFormFrame {
+  width: 28em;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  padding: 0 1.2rem;
+  margin: 2rem auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main-color);
+}
+.name {
+  width: 100%;
+  height: 2.7rem;
+  display: block;
+  margin: 0 auto;
+}
+input {
+  height: 2.7rem;
+  border: 1px solid white;
+}
+input::placeholder{
+  padding-left: 1rem;
+}
+.email {
+  width: 45%;
+  margin-right: 4%;
+  margin-bottom: 1rem;
+}
+.phone {
+  width: 47.5%;
+
+  border: 1px solid white;
+}
+.message {
+  width: 100%;
+  resize: none;
+}
+.submitBtn {
+  border-radius: 0;
+  display: block;
+  background-color: var(--main-color);
+  color: #e6e6e6;
+  border: 1px solid var(--main-color);
+  margin-bottom: 1rem;
+}
+.btnWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    width: 80%;
+  }
+}
+@media (max-width: 430px) {
+  .ContactUsFormFrame{
+    margin: 2rem;
+    border: 3px solid var(--main-color);
+    padding: 1rem;
+  }
+}
