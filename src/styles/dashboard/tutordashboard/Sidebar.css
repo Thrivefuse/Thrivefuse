@@ -1,0 +1,72 @@
+
+.sidebar-header{
+    margin-right: 120px;
+}
+
+.logo{
+    margin: 0 0 50% 0  ;
+    height: 35px;
+    width: 35px;
+    border-radius: 30px;
+}
+.log img{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 60px;
+    height: 50px;
+}
+
+.side-options{
+    margin: 0 0 20% 0 ;
+    display: flex;
+    color: #2257bf;
+}
+
+.side-options :hover{
+    color: #2257bf;
+}
+.button{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.icon {
+    width: 200px;
+    height: 200px;
+}
+
+.face{
+    width: 30px;
+    height: 40%;
+}
+  
+.buttons button{
+    background-color: #89b4c3; 
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    border: none;
+}
+.buttons1 button{
+    background-color: #89b4c3;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.buttons :hover{
+    background-color: #4c6eb2;
+}
+.buttons1 :hover{
+    background-color: #4c6eb2;
+}

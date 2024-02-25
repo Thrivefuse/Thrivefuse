@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./landingPage.module.css";
-import Header from "../Header/header";
+// import Header from "../Header/header";
 import Image from "../../assets/png/firstImage.png";
 import Kids from "../../assets/png/kidsLearning.png";
 import Program from "../../assets/png/program.png";
@@ -10,7 +10,7 @@ import "react-slideshow-image/dist/styles.css";
 function LandingPage() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <section className={style.first} id="first">
         <div className="text">
           <h1 className={style.headText}>
