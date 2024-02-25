@@ -72,11 +72,6 @@
     .footerText{
         width: 85%;
     }
-    .box2, {
-        margin-left: 0;
-        border: 1px solid red;
-        margin-left:-5rem ;
-    }
 }
 @media only screen and (max-width : 427px) {
     .container{
