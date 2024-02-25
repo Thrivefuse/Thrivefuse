@@ -48,18 +48,16 @@ function Profile() {
         <img src={laptop} alt="" width={135} height={85} />
         <img src={books} alt="" width={165} height={105} />
       </div>
-      <div className="flex flex-row mb-3  ml-8">
-        <h3 className="mr-56 font-semibold">Your Courses</h3>
-        {/* <button className="button2">
-          More
-        </button> */}
+      <div className="flex">
+        <h3 className="course">Your Courses</h3>
+        <button className="button2">More</button>
       </div>
 
-      <Slider
+      {/* <Slider
         valueToSlide={
           <SlideableCourseCards valuesToDisplay={coursecardValues} />
         }
-      />
+      /> */}
     </div>
   );
 }

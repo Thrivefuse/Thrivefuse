@@ -36,3 +36,10 @@
 .button2:hover{
     background-color: rgb(195, 199, 202);
 }
+
+.course{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 25px;
+    font-weight: 600;
+}
