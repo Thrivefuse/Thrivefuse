@@ -5,7 +5,9 @@ import TutorDashboard from "./Components/dashboard/tutordashboard/pages/TutorDas
 import ParentSignUp from "./views/auth/signup/parentSignUp";
 import TutorSignUp from "./views/auth/signup/tutorSignUp";
 import NotFoundPage from "./views/reusableComponents/NotFoundPage";
+import Student from "./views/Dashboard/studentdashboard/StudentDashboard";
 import SignUpNextSteps from "./views/auth/signup/signUpNextSteps";
+import Parent from "./views/Dashboard/parentdashboard/ParentDashboard";
 
 
 function App() {
@@ -16,8 +18,8 @@ function App() {
                 <Route path={"/home"} element={<LandingPage/>} />
                 <Route path={"/parent-registration"} element={<ParentSignUp/>} />
                 <Route path={"/tutor-registration"} element={<TutorSignUp/>} />
-                {/* <Route path={"/student-dashboard"} element={<Student/>} /> */}
-                {/* <Route path={"/dashboard"} element={Paren} /> */}
+                <Route path={"/student-dashboard"} element={<Student/>} /> 
+                <Route path={"/dashboard"} element={Parent} />
                 <Route path={"/tutor-dashboard"} element={<TutorDashboard />} />
               <Route path="*" element={<NotFoundPage/>} />
           </Routes>
