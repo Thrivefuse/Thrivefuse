@@ -7,7 +7,7 @@ const ParentDashboard = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'row', gap: '4rem' }}>
       <Parent_SideBar />
-      <div className="parent-main-content">
+      <div >
         <MainParentDashboard />
       </div>
     </div>
