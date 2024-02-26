@@ -53,11 +53,11 @@ function Profile() {
         <button className="button2">More</button>
       </div>
 
-      {/* <Slider
+      <Slider
         valueToSlide={
           <SlideableCourseCards valuesToDisplay={coursecardValues} />
         }
-      /> */}
+      />
     </div>
   );
 }
