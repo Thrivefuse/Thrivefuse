@@ -1,22 +1,16 @@
 import React from "react";
 import LandingPage from "./views/landingpage/landingPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import TutorDashboard from "./Components/dashboard/tutordashboard/pages/TutorDashboard";
-import ParentSignUp from "./views/auth/signup/parentSignUp";
-import TutorSignUp from "./views/auth/signup/tutorSignUp";
 import NotFoundPage from "./views/reusableComponents/NotFoundPage";
-import {TUTOR_REGISTRATION_PAGE} from "./utils/constants";
-<<<<<<< HEAD
-=======
-import Student from "./views/Dashboard/studentdashboard/StudentDashboard";
-import SignUpNextSteps from "./views/auth/signup/signUpNextSteps";
-import Parent from "./views/Dashboard/parentdashboard/ParentDashboard";
->>>>>>> a9788e5075af1d09aea00a6d8367281b9d70b8f9
-
-
-export const PARENT_REGISTRATION_PAGE = "/parent-registration";
-export const HOME_PAGE = "/home";
-export const TUTOR_DASHBOARD = "/tutor-dashboard";
+import ParentSignUp from './views/auth/signup/parentSignUp'
+import {
+    TUTOR_REGISTRATION_PAGE, HOME_PAGE, PARENT_REGISTRATION_PAGE,
+    TUTOR_DASHBOARD, STUDENT_DASHBOARD, PARENT_DASHBOARD
+} from "./utils/constants";
+import TutorSignUp from "./views/auth/signup/tutorSignUp";
+import TutorDashboard from "./views/dashboard/tutordashboard/pages/TutorDashboard";
+import Student from "./views/dashboard/tutordashboard/pages/Student";
+import ParentDashboard from "./views/dashboard/parentdashboard/ParentDashboard";
 
 function App() {
     return(
@@ -25,15 +19,11 @@ function App() {
                 <Route path={"/"} element={<LandingPage/>} />
                 <Route path={HOME_PAGE} element={<LandingPage/>} />
                 <Route path={PARENT_REGISTRATION_PAGE} element={<ParentSignUp/>} />
-<<<<<<< HEAD
                 <Route path={TUTOR_REGISTRATION_PAGE} element={<TutorSignUp/>} />
                 <Route path={TUTOR_DASHBOARD} element={<TutorDashboard />} />
-=======
-                <Route path={TUTOR_REGISTRATION_PAGE} element={<TutorSignUp/>} />        
-                <Route path={TUTOR_DASHBOARD} element={<TutorDashboard />} />
-                <Route path={"/student-dashboard"} element={<Student/>} /> 
-                <Route path={"/dashboard"} element={Parent} />
->>>>>>> a9788e5075af1d09aea00a6d8367281b9d70b8f9
+                <Route path={STUDENT_DASHBOARD} element={<Student/>} /> 
+                <Route path={PARENT_DASHBOARD} element={ParentDashboard} />
+                <Route path={"/dashboard"} element={ParentDashboard} />
               <Route path="*" element={<NotFoundPage/>} />
           </Routes>
       </Router> 

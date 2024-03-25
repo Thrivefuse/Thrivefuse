@@ -2,7 +2,7 @@ import * as React from "react";
 import NotificationsNoneTwoToneIcon from "@mui/icons-material/NotificationsNoneTwoTone";
 import Avatar from "@mui/material/Avatar";
 // import Stack from "@mui/material/Stack";
-import "../../../styles/Dashboard/parentdashboard/parentDashboardContent.css";
+import "../../../styles/dashboard/parentdashboard/parentDashboardContent.css";
 
 function stringToColor(string) {
   let hash = 0;

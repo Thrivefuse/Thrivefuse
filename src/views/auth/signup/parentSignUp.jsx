@@ -4,17 +4,12 @@ import Icon from '../../../assets/png/logo/thrive-fuse-logo-white-transparent.pn
 import ReusableSignUpComponent from '../../reusableComponents/reusableSignUpComponent.jsx'
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
-
 import {
-    SERVER_BASE_URL,
-    EMPTY_STRING,
-    PASSWORD_REGEX_PATTERN,
-    INVALID_PASSWORD_MESSAGE, INVALID_PASSWORD_FORMAT_MESSAGE, EMAIL_REGEX_PATTERN, INVALID_EMAIL_FORMAT_MESSAGE
+    SERVER_BASE_URL, EMPTY_STRING, PASSWORD_REGEX_PATTERN,
+    INVALID_PASSWORD_MESSAGE, INVALID_PASSWORD_FORMAT_MESSAGE,
+    EMAIL_REGEX_PATTERN, INVALID_EMAIL_FORMAT_MESSAGE
 } from "../../../utils/constants";
 import { useNavigate } from 'react-router-dom';
-
-
-
 
 const initialSignUpData = {
     firstName: EMPTY_STRING,
