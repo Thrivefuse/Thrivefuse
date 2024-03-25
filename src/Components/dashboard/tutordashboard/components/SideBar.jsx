@@ -6,7 +6,7 @@ import { FaBookReader } from "react-icons/fa";
 import { GrResources } from "react-icons/gr";
 import { GiCandlestickPhone } from "react-icons/gi";
 import { FaClipboardCheck } from "react-icons/fa";
-import "../../../../styles/dashboard/tutordashboard/TutorSideBar.css";
+import "../../../../styles/Dashboard/tutordashboard/TutorSideBar.css";
 
 function SideBar() {
   return (
