@@ -10,7 +10,7 @@ import {
 import TutorSignUp from "./views/auth/signup/tutorSignUp";
 import TutorDashboard from "./views/dashboard/tutordashboard/pages/TutorDashboard";
 import Student from "./views/dashboard/tutordashboard/pages/Student";
-import ParentDashboard from "./views/dashboard/parentdashboard/ParentDashboard";
+import ParentDashboard from "../src/views/dashboard/parentdashboard/ParentDashboard";
 
 function App() {
     return(
