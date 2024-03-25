@@ -3,5 +3,10 @@ export const DEPLOYED_SERVER_BASE_URL = 'https://thrive-fuse.wn.r.appspot.com';
 export const PARENT_REGISTRATION_PAGE = '/parent-registration';
 export const TUTOR_REGISTRATION_PAGE = '/tutor-registration';
 export const STUDENT_REGISTRATION_PAGE = '/student-registration';
-export const EMAIL_REGEX_PATTERN = /^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$/;
-export const PASSWORD_REGEX_PATTERN = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%&*()_+=|<>?{}\\[\\]~-]).*$/;
+export const EMAIL_REGEX_PATTERN = new RegExp(/^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$/);
+export const PASSWORD_REGEX_PATTERN = new RegExp(/^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%&*()_+=|<>?{}[\]~-]).*$/);
+export const INVALID_PASSWORD_MESSAGE = "Invalid Password";
+export const INVALID_PASSWORD_FORMAT_MESSAGE = "Requires at least 1 uppercase, 1 lowercase, 1 special character and a digit";
+export const INVALID_EMAIL_FORMAT_MESSAGE = "Email is invalid, please enter a valid email format";
+export const EMPTY_STRING = '';
+

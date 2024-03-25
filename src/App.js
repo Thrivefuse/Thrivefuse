@@ -5,20 +5,25 @@ import TutorDashboard from "./Components/dashboard/tutordashboard/pages/TutorDas
 import ParentSignUp from "./views/auth/signup/parentSignUp";
 import TutorSignUp from "./views/auth/signup/tutorSignUp";
 import NotFoundPage from "./views/reusableComponents/NotFoundPage";
-import SignUpNextSteps from "./views/auth/signup/signUpNextSteps";
+// import SignUpNextSteps from "./views/auth/signup/signUpNextSteps";
+import {TUTOR_REGISTRATION_PAGE} from "./utils/constants";
 
+
+export const PARENT_REGISTRATION_PAGE = "/parent-registration";
+export const HOME_PAGE = "/home";
+export const TUTOR_DASHBOARD = "/tutor-dashboard";
 
 function App() {
     return(
         <Router>
             <Routes>
                 <Route path={"/"} element={<LandingPage/>} />
-                <Route path={"/home"} element={<LandingPage/>} />
-                <Route path={"/parent-registration"} element={<ParentSignUp/>} />
-                <Route path={"/tutor-registration"} element={<TutorSignUp/>} />
+                <Route path={HOME_PAGE} element={<LandingPage/>} />
+                <Route path={PARENT_REGISTRATION_PAGE} element={<ParentSignUp/>} />
+                <Route path={TUTOR_REGISTRATION_PAGE} element={<TutorSignUp/>} />
                 {/* <Route path={"/student-dashboard"} element={<Student/>} /> */}
                 {/* <Route path={"/dashboard"} element={Paren} /> */}
-                <Route path={"/tutor-dashboard"} element={<TutorDashboard />} />
+                <Route path={TUTOR_DASHBOARD} element={<TutorDashboard />} />
               <Route path="*" element={<NotFoundPage/>} />
           </Routes>
       </Router> 
