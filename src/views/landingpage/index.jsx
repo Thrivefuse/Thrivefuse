@@ -4,7 +4,7 @@ import style from "./landingPage.module.css";
 import Image from "../../assets/png/firstImage.png";
 import Kids from "../../assets/png/kidsLearning.png";
 import Program from "../../assets/png/program.png";
-import Enterpreneur from "../../assets/png/enterpreneur.png";
+import Entrepreneur from "../../assets/png/enterpreneur.png";
 import "react-slideshow-image/dist/styles.css";
 
 function LandingPage() {
@@ -25,7 +25,7 @@ function LandingPage() {
           </div>
         </div>
         <div className="landImage">
-          <img src={Image} alt="" srcset="" className={style.landImage} />
+          <img src={Image} alt="" srcSet="" className={style.landImage} />
         </div>
       </section>
 
@@ -58,7 +58,7 @@ function LandingPage() {
             src={Kids}
             alt="Kids learning with entusiasm"
             className={style.enthusiastImage}
-            srcset=""
+            srcSet=""
           />
         </div>
       </section>
@@ -88,9 +88,9 @@ function LandingPage() {
             style={{ border: "1px solid var(--main-color)" }}
           >
             <img
-              src={Enterpreneur}
+              src={Entrepreneur}
               alt="next generational black kids learning Enterpreneurship skills with much enthusiasm and also in a conducive African office making life meetup and also ready to bring out the best idea in them "
-              srcset=""
+              srcSet=""
               className={style.systemImage}
             />
             <h3 className={style.systemTitle}>Lorem ipsum</h3>
@@ -107,7 +107,7 @@ function LandingPage() {
 
           <div  className={style.SystemBox}
             style={{ border: "1px solid var(--main-color)" }}>
-            <img src="" alt="" srcset="" className={style.systemImage} />
+            <img src="" alt="" srcSet="" className={style.systemImage} />
             <h3 className={style.systemTitle} >Lorem ipsum</h3>
             <p className={style.systemText} >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -117,7 +117,7 @@ function LandingPage() {
             </p>
           </div>
           <div className={style.SystemBox} >
-            <img src="" alt="" srcset="" className={style.systemImage} />
+            <img src="" alt="" srcSet="" className={style.systemImage} />
             <h3 className={style.systemTitle} >Lorem ipsum</h3>
             <p className={style.systemText} >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -127,7 +127,7 @@ function LandingPage() {
             </p>
           </div>
           <div className={style.SystemBox} > 
-            <img src="" alt="" srcset="" className={style.systemImage}  />
+            <img src="" alt="" srcSet="" className={style.systemImage}  />
             <h3 className={style.systemTitle} >Lorem ipsum</h3>
             <p className={style.systemText} >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
@@ -137,7 +137,7 @@ function LandingPage() {
             </p>
           </div>
           <div className={style.SystemBox} >
-            <img src="" alt="" srcset="" className={style.systemImage}  />
+            <img src="" alt="" srcSet="" className={style.systemImage}  />
             <h3 className={style.systemTitle} >Lorem ipsum</h3>
             <p className={style.systemText} >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
