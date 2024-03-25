@@ -1,13 +1,13 @@
 import React from "react";
 import CoursesCard from "../components/CoursesCard";
-import generalInage from '../../../../assets/blue back ground cross.jpeg'
-import GeneralCourse from "../components/reuseables/GeneralCoursee";
+import generalImage from '../../../../assets/blue back ground cross.jpeg'
+import GeneralCourse from "../components/reuseables/GeneralCourse";
 
 
 const activeCourses = [
 {
     courseTitle: 'Literature', 
-    image: generalInage,
+    image: generalImage,
     progress: 80,
 },
 {
@@ -34,7 +34,7 @@ const activeCourses = [
 const availableCourses = [
   {
       courseTitle: 'Geometry', 
-      image: generalInage,
+      image: generalImage,
       progress: 0,
       description: 'This is how the world goes rouns, pls don ask any more questions plz. thats akk fo today guys'
   },
