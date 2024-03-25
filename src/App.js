@@ -23,7 +23,6 @@ function App() {
                 <Route path={TUTOR_DASHBOARD} element={<TutorDashboard />} />
                 <Route path={STUDENT_DASHBOARD} element={<Student/>} /> 
                 <Route path={PARENT_DASHBOARD} element={ParentDashboard} />
-                <Route path={"/dashboard"} element={ParentDashboard} />
               <Route path="*" element={<NotFoundPage/>} />
           </Routes>
       </Router> 
