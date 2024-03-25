@@ -5,8 +5,8 @@ export const TUTOR_REGISTRATION_PAGE = '/tutor-registration';
 export const STUDENT_REGISTRATION_PAGE = '/student-registration';
 export const HOME_PAGE = '/home';
 export const TUTOR_DASHBOARD = '/tutor-dashboard';
-export const STUDENT_DASHBOARD = 'student-dashboard';
-export const PARENT_DASHBOARD = 'parent-dashboard'
+export const STUDENT_DASHBOARD = '/student-dashboard';
+export const PARENT_DASHBOARD = '/parent-dashboard'
 export const EMAIL_REGEX_PATTERN = new RegExp(/^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$/);
 export const PASSWORD_REGEX_PATTERN = new RegExp(/^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%&*()_+=|<>?{}[\]~-]).*$/);
 export const INVALID_PASSWORD_MESSAGE = "Invalid Password";
