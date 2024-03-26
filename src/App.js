@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NotFoundPage from "./views/reusableComponents/NotFoundPage";
 import {HOME_PAGE, PARENT_DASHBOARD, PARENT_REGISTRATION_PAGE, TUTOR_REGISTRATION_PAGE} from "./utils/constants";
 import TutorSignUp from "./views/auth/signup/tutorSignUp";
-import ParentDashboard from "./views/dashboard/parentdashboard/ParentDashboard";
+import ParentDashboard from "./views/dashboard/parent/ParentDashboard";
 import ParentSignUp from "./views/auth/signup/parentSignUp";
 
 function App() {
