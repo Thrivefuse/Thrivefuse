@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/board/parentdashboard/sideBar.css';
+import '../../styles/dashboard/parentdashboard/sideBar.css';
 
 
  function Parent_SideBar() {
