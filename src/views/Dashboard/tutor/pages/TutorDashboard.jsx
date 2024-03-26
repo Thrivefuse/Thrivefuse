@@ -6,7 +6,10 @@ import DateRangeCalendarCalendarsProp from "../components/Calendar";
 function TutorDashboard() {
   return (
       <div className="student-dashboard" style={{display: 'flex'}}>
-        </div>
+        <SideBar/>
+        <Profile/>
+        <DateRangeCalendarCalendarsProp/>
+      </div>
 );
 }
 
