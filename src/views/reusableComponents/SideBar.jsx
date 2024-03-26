@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../../styles/board/tutordashboard/TutorSideBar.css';
+import '../../styles/dashboard/tutordashboard/TutorSideBar.css';
 // import ADD from '../../assets/png/logo/thrive-fuse-logo-white-transparent.png';
 
 

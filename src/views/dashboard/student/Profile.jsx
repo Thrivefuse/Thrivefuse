@@ -1,6 +1,6 @@
 import React from 'react'
 import CoursesCard from '../../reusableComponents/CoursesCard'
-import '../../../styles/board/tutordashboard/Profile.css'
+import '../../../styles/dashboard/tutordashboard/Profile.css'
 import generalImage from '../assets/blue back ground cross.jpeg'
 import books from '../assets/books-removebg-preview.png'
 import laptop from '../assets/cartoon-laptop-removebg-preview.png'

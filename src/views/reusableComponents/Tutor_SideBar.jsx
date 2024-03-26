@@ -4,7 +4,7 @@ import { BsGrid1X2Fill } from "react-icons/bs";
 import { FaBookReader } from "react-icons/fa";
 import { GrResources } from "react-icons/gr";
 import { GiBookshelf } from "react-icons/gi";
-import "../../styles/board/tutordashboard/TutorSideBar.css"
+import "../../styles/dashboard/tutordashboard/TutorSideBar.css"
 
 function Tutor_SideBar() {
   return (
