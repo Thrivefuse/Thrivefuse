@@ -10,7 +10,6 @@ import {
 import TutorSignUp from "./views/auth/signup/tutorSignUp";
 import TutorDashboard from "./views/dashboard/tutordashboard/pages/TutorDashboard";
 import Student from "./views/dashboard/tutordashboard/pages/Student";
-import ParentDashboard from "../src/views/dashboard/parentdashboard/ParentDashboard";
 
 function App() {
     return(
@@ -22,7 +21,6 @@ function App() {
                 <Route path={TUTOR_REGISTRATION_PAGE} element={<TutorSignUp/>} />
                 <Route path={TUTOR_DASHBOARD} element={<TutorDashboard />} />
                 <Route path={STUDENT_DASHBOARD} element={<Student/>} /> 
-                <Route path={PARENT_DASHBOARD} element={ParentDashboard} />
               <Route path="*" element={<NotFoundPage/>} />
           </Routes>
       </Router> 

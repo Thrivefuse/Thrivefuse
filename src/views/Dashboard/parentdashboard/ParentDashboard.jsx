@@ -1,12 +1,12 @@
 import React from 'react';
-import Parent_SideBar from '../../reusableComponents/Parent__SideBar';
+import ParentSideBar from '../../reusableComponents/ParentSideBar';
 import MainParentDashboard from './ParentDashboardContent';
 
 const ParentDashboard = () => {
   // const [isDarkMode, toggleTheme] = useTheme();
   return (
     <div style={{ display: 'flex', flexDirection: 'row', gap: '4rem' }}>
-      <Parent_SideBar />
+      <ParentSideBar />
       <div >
         <MainParentDashboard />
       </div>
