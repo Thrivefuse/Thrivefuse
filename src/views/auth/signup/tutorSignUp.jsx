@@ -3,7 +3,12 @@ import Icon from '../../../assets/png/logo/thrive-fuse-logo-white-transparent.pn
 import ReusableSignUpComponent from '../../reusableComponents/reusableSignUpComponent.jsx'
 import '../../../styles/auth/signup/tutorSignUp.css'
 import axios from 'axios';
-import { EMAIL_REGEX_PATTERN, PASSWORD_REGEX_PATTERN, SERVER_BASE_URL } from '../../../utils/constants.js';
+import {
+    DEPLOYED_SERVER_BASE_URL,
+    EMAIL_REGEX_PATTERN,
+    PASSWORD_REGEX_PATTERN,
+
+} from '../../../utils/constants.js';
 
 const initialTutorSignUpData = {
     firstName: '',
@@ -47,7 +52,7 @@ const TutorSignUp = () => {
         data.append('tutorsResume', tutorSignUpData.tutorsResume)
         data.append('professionalQualification', tutorSignUpData.professionalQualification)
 
-        axios.post(`${SERVER_BASE_URL}/tutor/register`, data)
+        axios.post(`${DEPLOYED_SERVER_BASE_URL}/tutor/register`, data)
             .then((response) => {
                 console.log(response.data);
             })
