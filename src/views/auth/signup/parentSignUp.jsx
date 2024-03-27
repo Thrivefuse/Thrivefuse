@@ -5,7 +5,7 @@ import ReusableSignUpComponent from '../../reusableComponents/reusableSignUpComp
 import axios from "axios";
 import {toast, ToastContainer} from "react-toastify";
 import {
-    SERVER_BASE_URL, EMPTY_STRING, PASSWORD_REGEX_PATTERN,
+    DEPLOYED_SERVER_BASE_URL, EMPTY_STRING, PASSWORD_REGEX_PATTERN,
     INVALID_PASSWORD_MESSAGE, INVALID_PASSWORD_FORMAT_MESSAGE,
     EMAIL_REGEX_PATTERN, INVALID_EMAIL_FORMAT_MESSAGE
 } from "../../../utils/constants";
@@ -72,7 +72,7 @@ const ParentSignUp = () => {
     function handleFormSubmission(event) {
         toast.info("In Submit", {position: "top-right"})
         event.preventDefault();
-        axios.post(`${SERVER_BASE_URL}/parent/register`, signUpData)
+        axios.post(`${DEPLOYED_SERVER_BASE_URL}/parent/register`, signUpData)
         .then((response) => {
             toast.success("Successful Registration",
                 {
