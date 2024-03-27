@@ -1,5 +1,4 @@
 import React from "react";
-import LandingPage from "./views/landingpage/landingPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NotFoundPage from "./views/reusableComponents/NotFoundPage";
 import {
@@ -13,6 +12,7 @@ import StudentDashboard from "./views/dashboard/student/StudentDashboard";
 import ParentDashboard from "./views/dashboard/parent/ParentDashboard";
 import TutorDashboard from "./views/dashboard/tutor/pages/TutorDashboard";
 import StudentSignUp from "./views/auth/signup/studentSignUp";
+import LandingPage from "./views/landingpage";
 
 function App() {
     return(
@@ -29,6 +29,6 @@ function App() {
                 <Route path={TUTOR_DASHBOARD} element={<TutorDashboard/>} />
             </Routes>
         </Router>
-    );
+    )
 }
 export default App;
