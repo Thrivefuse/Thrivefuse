@@ -13,7 +13,8 @@ import ParentDashboard from "./views/dashboard/parent/ParentDashboard";
 import TutorDashboard from "./views/dashboard/tutor/pages/TutorDashboard";
 import StudentSignUp from "./views/auth/signup/studentSignUp";
 import LandingPage from "./views/landingpage";
-
+// "start": "serve -s build",
+//     "dev": "react-scripts start"
 function App() {
     return(
         <Router>
