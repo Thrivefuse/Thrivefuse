@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./landingPage.module.css";
+import style from "../../styles/landingpage/landingPage.module.css";
 // import Header from "../Header/header";
 import Image from "../../assets/png/firstImage.png";
 import Kids from "../../assets/png/kidsLearning.png";
